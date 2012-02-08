@@ -12,8 +12,11 @@ How?
 run following commands to get the source and create a config file
 
 `cd ~`
+
 `git clone https://github.com/robertcigan/engineyard_s3_backup`
+
 `cd engineyard_s3_backup/`
+
 `cp s3backup.yaml.example s3backup.yaml`
 
 Set you source and target S3 credentials by editing s3backup.yaml as following:
@@ -22,6 +25,7 @@ Source credentials for EY S3 account that stores you DB backups can be found in 
 You can get those easily by running ie.
 
 `sudo cat /etc/chef/dna.json | grep aws_secret_key`
+
 `sudo cat /etc/chef/dna.json | grep aws_secret_id`
 
 Source bucket pattern is just how EY names their buckets to store your backups. RIght now it always contains string ey-backup
