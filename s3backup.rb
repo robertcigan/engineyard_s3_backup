@@ -14,6 +14,7 @@ target_bucket = s3_target.buckets.create(config['target']['bucket']) unless targ
 source_buckets.each do |bucket|
   puts "Source bucket: #{bucket.name}"
   bucket.objects.each do |object|
+    print Time.now.to_s + ' '
     print object.key
     $stdout.flush
     target_object = target_bucket.objects[object.key]
