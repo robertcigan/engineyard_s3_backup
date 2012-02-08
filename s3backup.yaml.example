@@ -1,0 +1,9 @@
+source:
+  aws_id: 
+  aws_key: 
+  bucket_pattern: ey-backup
+
+target: 
+  aws_id: 
+  aws_key: 
+  bucket: 

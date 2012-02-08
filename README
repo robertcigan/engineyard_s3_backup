@@ -1,0 +1,12 @@
+== EngineYard S3 backup
+
+Why?
+
+When something happens to EY or you remove the environment/account you loose all DB backups
+
+How?
+
+ssh deploy@YOUR_ENV_IP_OR_HOSTNAME
+cd ~
+git clone https://github.com/robertcigan/engineyard_s3_backup 
+cd engineyard_s3_backup/
