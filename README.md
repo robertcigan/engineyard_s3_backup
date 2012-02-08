@@ -49,4 +49,10 @@ or put it into the cron definition of your EngineYard environment via their cons
 Specials
 --------
 
-Tested && working in 1.9.2
+Tested & working in 1.9.2
+
+Does regular addition of new files that appeared in ey-backup buckets. 
+
+Does NO delete/update of files. 
+
+Copies only new files that are automatically added by EY scripts.
